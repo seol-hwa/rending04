@@ -94,14 +94,17 @@ ol {
   font-weight: 700;
   font-style: normal;
 }
-body, html {
+body,
+html {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 10px;
-  line-height: 1;
+  line-height: 1.5;
 }
 
-body .sebang, html .sebang {
+body .sebang,
+html .sebang {
   font-family: "Sebang Gothic", sans-serif;
+  line-height: 1.2;
 }
 
 .font-12-bl {
@@ -4644,135 +4647,6 @@ body .sebang, html .sebang {
 .dropdown-right .dropdown-menu li:last-child {
   border-top: 1px solid #ddd;
   padding: 0.4rem 0;
-}
-
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.swiper-pagination-fraction {
-  font-size: 1.4rem;
-}
-
-.slick-wrap {
-  position: relative;
-}
-.slick-wrap .slick {
-  width: 100%;
-  height: 100%;
-}
-.slick-wrap .slick-list,
-.slick-wrap .slick-track {
-  height: 100% !important;
-  padding: 0 !important;
-}
-.slick-wrap .slick-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  background: #fff;
-  width: 100%;
-  height: 100%;
-}
-.slick-wrap .mySlick3 .slick-item {
-  height: 60rem;
-}
-.slick-wrap .mySlick3 .slick-dots {
-  bottom: 50%;
-  transform: translateY(50%);
-  right: 1rem;
-  width: auto;
-}
-.slick-wrap .mySlick3 .slick-dots li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 8px;
-  height: 8px;
-  margin-bottom: 8px;
-}
-.slick-wrap .mySlick3 .slick-dots li:last-child {
-  margin-bottom: 0;
-}
-.slick-wrap .mySlick3 .slick-dots li button {
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.25;
-  padding: 0;
-  border-radius: 50%;
-}
-.slick-wrap .mySlick3 .slick-dots li button:before {
-  display: none;
-}
-.slick-wrap .mySlick3 .slick-dots li.slick-active button {
-  opacity: 1;
-}
-.slick-wrap .slick-item img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.slick-wrap .arrow-box button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  padding: 0;
-}
-.slick-wrap .arrow-box button.prev {
-  left: 1rem;
-}
-.slick-wrap .arrow-box button.next {
-  right: 1rem;
-}
-.slick-wrap .paging {
-  font-size: 1.4rem;
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.swiper-pagination.paginationBot {
-  font-size: 1.4rem;
-  position: initial;
-  padding: 2rem 0 0 0;
 }
 
 .d-flex {
