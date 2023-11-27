@@ -408,6 +408,86 @@ body {
         }
       }
     }
+
+    // 상담
+    .consult {
+      .tit-group {
+        display: flex;
+        margin-bottom: 10rem;
+        .h1 {
+          width: 50%;
+          margin-bottom: 0;
+          text-align: left;
+        }
+        p {
+          width: 50%;
+          font-size: 1.8rem;
+        }
+      }
+      &__process {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        li {
+          width: 193px;
+          height: 193px;
+          text-indent: -9999px;
+          overflow: hidden;
+
+          &.step1 {
+            background: url(../images/consult1.png) no-repeat center;
+            background-size: cover;
+          }
+          &.step2 {
+            background: url(../images/consult2.png) no-repeat center;
+            background-size: cover;
+          }
+          &.step3 {
+            background: url(../images/consult3.png) no-repeat center;
+            background-size: cover;
+          }
+          &.step4 {
+            background: url(../images/consult4.png) no-repeat center;
+            background-size: cover;
+          }
+          &.step5 {
+            background: url(../images/consult5.png) no-repeat center;
+            background-size: cover;
+          }
+          &.step6 {
+            background: url(../images/consult6.png) no-repeat center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+
+    // 배너
+    .banner {
+      background: #5a70ee;
+
+      &__box {
+        gap: 2rem;
+      }
+      &__item {
+        display: block;
+        width: 30rem;
+        padding: 1.8rem 0;
+        background: #84a1ea;
+        border-radius: 1rem;
+        color: #fff;
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+
+        &._gohome {
+          background: #fff;
+          color: #5a70ee;
+        }
+      }
+    }
   }
 
   // 공통 사용
@@ -418,10 +498,6 @@ body {
       position: relative;
       width: 126rem;
       margin: 0 auto;
-
-      @media (max-width: 1260px) {
-        width: 98%;
-      }
     }
   }
   .bg-blue {
@@ -449,6 +525,53 @@ body {
       color: #666;
       font-size: 1.8rem;
       text-align: center;
+    }
+  }
+}
+.footer {
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    width: 126rem;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+  &__logo {
+    font-family: "Sebang Gothic", sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+  &-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 5rem;
+    width: 70%;
+
+    address {
+      font-style: normal;
+      font-size: 1.6rem;
+      strong {
+        font-size: 1.8rem;
+      }
+      ul {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      li {
+        width: 50%;
+      }
+    }
+  }
+  &-right {
+    color: #5970ee;
+    font-size: 4.2rem;
+    text-align: right;
+    line-height: 1.2;
+    strong {
+      display: block;
+      font-weight: 700;
     }
   }
 }
@@ -564,7 +687,26 @@ body {
     }
   }
 }
-
+@media (max-width: 1260px) {
+  body {
+    .container-inner {
+      width: 98%;
+    }
+    main {
+      // 상담
+      .consult {
+        .tit-group {
+          .h1 {
+            padding-left: 5%;
+          }
+        }
+      }
+    }
+  }
+  .footer-inner {
+    width: 98%;
+  }
+}
 @media (max-width: 1199px) {
   body {
     main {
@@ -665,6 +807,31 @@ body {
           width: calc(50% - 0.6rem);
         }
       }
+
+      // 상담
+      .consult {
+        .tit-group {
+          display: block;
+          text-align: center;
+          .h1 {
+            width: 100%;
+            margin-bottom: 2rem;
+            padding-left: 0;
+            text-align: center;
+          }
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .footer-left {
+    address ul {
+      display: block;
+      li {
+        width: auto;
+      }
     }
   }
 }
@@ -713,12 +880,45 @@ body {
           }
         }
       }
+      // 상담
+      .consult {
+        .tit-group {
+          margin-bottom: 5rem;
+        }
+      }
+      // 배너
+      .banner {
+        &__item {
+          width: calc(30% - 1rem);
+          padding: 1.5rem 0;
+          font-size: 1.8rem;
+        }
+      }
     }
 
     // 공통사용
     .h1 {
       margin-bottom: 5rem;
       font-size: 2.4rem;
+    }
+  }
+  .footer {
+    &-inner {
+      display: block;
+    }
+    &__logo {
+      margin-bottom: 1rem;
+      font-size: 2.4rem;
+    }
+    &-left {
+      display: block;
+      width: auto;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    &-right {
+      font-size: 2.4rem;
+      text-align: center;
     }
   }
 }
@@ -738,6 +938,14 @@ body {
         dd {
           font-size: 1.4rem;
         }
+      }
+    }
+    .consult__process {
+      gap: 1.2rem;
+      li {
+        width: calc(33.33% - 0.8rem);
+        height: 15rem;
+        background-size: contain !important;
       }
     }
   }
@@ -786,6 +994,23 @@ body {
       }
       .intro-cont {
         padding: 8rem 0;
+      }
+      // 배너
+      .banner {
+        .h1 strong {
+          display: block;
+        }
+        &__box {
+          gap: 1rem;
+        }
+        &__item {
+          width: calc(50% - 0.5rem);
+        }
+      }
+      .consult__process {
+        li {
+          height: 12rem;
+        }
       }
     }
     // 공통사용

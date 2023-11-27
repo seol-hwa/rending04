@@ -1,7 +1,6 @@
-const header=document.querySelector('header');
-const footer=document.querySelector('footer');
+const header = document.querySelector("header");
 
-header.innerHTML=`
+header.innerHTML = `
 <div class="d-flex header3__pc-wrap inner">
     <h1 class="header-title">
         <a href="" class="font-30 sebang">miro</a>
@@ -98,7 +97,4 @@ header.innerHTML=`
         </div>
     </div>
 </div>
-`
-footer.innerHTML=`
-
-`
+`;

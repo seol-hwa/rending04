@@ -477,6 +477,76 @@ body main .brand-list .logo-icon {
 body main .brand-list .logo-icon img {
   width: 100%;
 }
+body main .consult .tit-group {
+  display: flex;
+  margin-bottom: 10rem;
+}
+body main .consult .tit-group .h1 {
+  width: 50%;
+  margin-bottom: 0;
+  text-align: left;
+}
+body main .consult .tit-group p {
+  width: 50%;
+  font-size: 1.8rem;
+}
+body main .consult__process {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+body main .consult__process li {
+  width: 193px;
+  height: 193px;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+body main .consult__process li.step1 {
+  background: url(../images/consult1.png) no-repeat center;
+  background-size: cover;
+}
+body main .consult__process li.step2 {
+  background: url(../images/consult2.png) no-repeat center;
+  background-size: cover;
+}
+body main .consult__process li.step3 {
+  background: url(../images/consult3.png) no-repeat center;
+  background-size: cover;
+}
+body main .consult__process li.step4 {
+  background: url(../images/consult4.png) no-repeat center;
+  background-size: cover;
+}
+body main .consult__process li.step5 {
+  background: url(../images/consult5.png) no-repeat center;
+  background-size: cover;
+}
+body main .consult__process li.step6 {
+  background: url(../images/consult6.png) no-repeat center;
+  background-size: cover;
+}
+body main .banner {
+  background: #5a70ee;
+}
+body main .banner__box {
+  gap: 2rem;
+}
+body main .banner__item {
+  display: block;
+  width: 30rem;
+  padding: 1.8rem 0;
+  background: #84a1ea;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+body main .banner__item._gohome {
+  background: #fff;
+  color: #5a70ee;
+}
 body .container {
   padding: 10rem 0;
 }
@@ -484,11 +554,6 @@ body .container-inner {
   position: relative;
   width: 126rem;
   margin: 0 auto;
-}
-@media (max-width: 1260px) {
-  body .container-inner {
-    width: 98%;
-  }
 }
 body .bg-blue {
   background: #f5f8ff;
@@ -515,6 +580,51 @@ body hgroup span {
   color: #666;
   font-size: 1.8rem;
   text-align: center;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 126rem;
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+.footer__logo {
+  font-family: "Sebang Gothic", sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.footer-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 5rem;
+  width: 70%;
+}
+.footer-left address {
+  font-style: normal;
+  font-size: 1.6rem;
+}
+.footer-left address strong {
+  font-size: 1.8rem;
+}
+.footer-left address ul {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-left address li {
+  width: 50%;
+}
+.footer-right {
+  color: #5970ee;
+  font-size: 4.2rem;
+  text-align: right;
+  line-height: 1.2;
+}
+.footer-right strong {
+  display: block;
+  font-weight: 700;
 }
 
 @media (max-width: 1700px) {
@@ -572,6 +682,17 @@ body hgroup span {
     opacity: 0.2;
   }
 }
+@media (max-width: 1260px) {
+  body .container-inner {
+    width: 98%;
+  }
+  body main .consult .tit-group .h1 {
+    padding-left: 5%;
+  }
+  .footer-inner {
+    width: 98%;
+  }
+}
 @media (max-width: 1199px) {
   body main .intro-cont .inner .intro-wrap .layout:first-child {
     padding-right: 0rem;
@@ -612,6 +733,25 @@ body hgroup span {
   body main .benefit-item {
     width: calc(50% - 0.6rem);
   }
+  body main .consult .tit-group {
+    display: block;
+    text-align: center;
+  }
+  body main .consult .tit-group .h1 {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-left: 0;
+    text-align: center;
+  }
+  body main .consult .tit-group p {
+    width: 100%;
+  }
+  .footer-left address ul {
+    display: block;
+  }
+  .footer-left address ul li {
+    width: auto;
+  }
 }
 @media (max-width: 768px) {
   body main .visual-cont .inner .visual-wrap .visual-box .visual-title {
@@ -633,9 +773,34 @@ body hgroup span {
   body main .intro-cont .inner .intro-wrap .layout .text-wrap .layout-title-sub {
     font-size: 1.6rem;
   }
+  body main .consult .tit-group {
+    margin-bottom: 5rem;
+  }
+  body main .banner__item {
+    width: calc(30% - 1rem);
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+  }
   body .h1 {
     margin-bottom: 5rem;
     font-size: 2.4rem;
+  }
+  .footer-inner {
+    display: block;
+  }
+  .footer__logo {
+    margin-bottom: 1rem;
+    font-size: 2.4rem;
+  }
+  .footer-left {
+    display: block;
+    width: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  .footer-right {
+    font-size: 2.4rem;
+    text-align: center;
   }
 }
 @media (max-width: 640px) {
@@ -652,6 +817,14 @@ body hgroup span {
   }
   body main .benefit-item dd {
     font-size: 1.4rem;
+  }
+  body main .consult__process {
+    gap: 1.2rem;
+  }
+  body main .consult__process li {
+    width: calc(33.33% - 0.8rem);
+    height: 15rem;
+    background-size: contain !important;
   }
 }
 @media (max-width: 500px) {
@@ -682,6 +855,18 @@ body hgroup span {
   }
   body main .intro-cont {
     padding: 8rem 0;
+  }
+  body main .banner .h1 strong {
+    display: block;
+  }
+  body main .banner__box {
+    gap: 1rem;
+  }
+  body main .banner__item {
+    width: calc(50% - 0.5rem);
+  }
+  body main .consult__process li {
+    height: 12rem;
   }
   body .container {
     padding: 8rem 0;
