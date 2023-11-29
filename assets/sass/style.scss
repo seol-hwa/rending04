@@ -178,8 +178,8 @@ body {
         }
       }
     }
-    //intro
     .container {
+      //intro
       .intro {
         &-item {
           background-color: transparent;
@@ -209,13 +209,9 @@ body {
           }
         }
       }
-    }
-    //consulting
-    .container {
-      padding: 10rem 0;
-      background-color: #f5f8ff;
+      //duologue
       &-inner {
-        .conslt {
+        .duolg {
           &-item {
             background-color: transparent;
             .text-wrap {
@@ -229,10 +225,27 @@ body {
                 font-size: 1.8rem;
                 color: #666;
                 line-height: 2;
+                -webkit-line-clamp: initial;
+                word-break: keep-all;
               }
             }
           }
         }
+      }
+    }
+    // duologue
+    .bubble {
+      flex-direction: column;
+      &-qst {
+        width: 31.9rem;
+        margin-left: auto;
+      }
+      &-ans {
+        width: 32.6rem;
+        margin: 1.5rem 0 1.2rem;
+      }
+      img {
+        width: 100%;
       }
     }
 
@@ -768,6 +781,10 @@ body {
           }
         }
       }
+      // duologue
+      .duolg {
+        display: flex;
+      }
 
       // benefit
       .benefit {
@@ -820,8 +837,8 @@ body {
           flex-wrap: wrap;
         }
       }
-      //intro
       .container {
+        // intro
         .intro {
           &-item {
             .text-wrap {
@@ -829,6 +846,19 @@ body {
                 font-size: 2rem;
                 word-break: keep-all;
                 line-height: 1.4;
+              }
+              .layout-title-sub {
+                font-size: 1.6rem;
+              }
+            }
+          }
+        }
+        // duologue
+        .duolg {
+          &-item {
+            .text-wrap {
+              .layout-title {
+                font-size: 3.2rem;
               }
               .layout-title-sub {
                 font-size: 1.6rem;
@@ -940,6 +970,15 @@ body {
               top: 8rem;
             }
           }
+        }
+      }
+      // duologue
+      .bubble {
+        &-qst {
+          width: 26rem;
+        }
+        &-ans {
+          width: 28rem;
         }
       }
       // 배너
