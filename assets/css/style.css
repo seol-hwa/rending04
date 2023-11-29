@@ -212,31 +212,31 @@ body .con-wrap__header3 .header3__pc-wrap .pc-wrap__right .mo-nav-btn {
 body .con-wrap__header3 .header3__pc-wrap .pc-wrap__right .mo-nav-btn.active .mo-nav-btn__line {
   background-color: #000;
 }
-body main .visual-cont {
+body main .visual {
   background-image: linear-gradient(to left, #465fed, #657aef);
   padding: 23.6rem 0rem 21rem;
 }
-body main .visual-cont .inner .visual-wrap {
+body main .visual-wrap {
   position: relative;
 }
-body main .visual-cont .inner .visual-wrap .visual-box {
+body main .visual-box {
   position: relative;
   z-index: 1;
 }
-body main .visual-cont .inner .visual-wrap .visual-box .visual-title {
+body main .visual-title {
   font-size: 6rem;
   color: #fff;
   line-height: 1.2;
 }
-body main .visual-cont .inner .visual-wrap .visual-box .visual-text-box {
+body main .visual-text-box {
   margin-top: 4rem;
 }
-body main .visual-cont .inner .visual-wrap .visual-box .visual-text-box .visual-text {
+body main .visual-text {
   color: #fff;
   font-size: 2rem;
   line-height: 1.6;
 }
-body main .visual-cont .inner .visual-wrap .visual-box .visual-link {
+body main .visual-link {
   color: #fff;
   display: inline-block;
   margin-top: 3rem;
@@ -244,94 +244,84 @@ body main .visual-cont .inner .visual-wrap .visual-box .visual-link {
   line-height: 1.6;
   font-size: 2rem;
 }
-body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble {
+body main .visual-img-wrap .deco-buble {
   position: absolute;
   border-radius: 50%;
   display: block;
 }
-body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub1 {
+body main .visual-img-wrap .deco-buble.bub1 {
   width: 25.3rem;
   height: 25.3rem;
   background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent 60%);
   top: -8.6rem;
   left: -11.3rem;
 }
-body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub2 {
+body main .visual-img-wrap .deco-buble.bub2 {
   width: 28.2rem;
   height: 28.2rem;
   background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.2), transparent 70%);
   top: -2rem;
   right: -16rem;
 }
-body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub3 {
+body main .visual-img-wrap .deco-buble.bub3 {
   width: 14rem;
   height: 14rem;
   background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.4), transparent);
   top: -2rem;
   right: -18rem;
 }
-body main .visual-cont .inner .visual-wrap .visual-img-wrap .img-wrap {
+body main .visual-img-wrap .img-wrap {
   position: absolute;
   width: 80%;
   bottom: -10.2rem;
   right: -20rem;
 }
-body main .visual-cont .inner .visual-wrap .visual-img-wrap .img-wrap img {
+body main .visual-img-wrap .img-wrap img {
   width: 100%;
 }
-body main .intro-cont {
-  padding: 10.4rem 0 10rem 0;
-}
-body main .intro-cont .inner .intro-title {
-  text-align: center;
-  font-weight: 400;
-  font-size: 4.2rem;
-  color: #333;
-}
-body main .intro-cont .inner .intro-wrap {
-  margin-top: 10rem;
-}
-body main .intro-cont .inner .intro-wrap .layout {
+body main .container .intro-item {
   background-color: transparent;
 }
-body main .intro-cont .inner .intro-wrap .layout:first-child {
+body main .container .intro-item:first-child {
   padding-right: 6.5rem;
+  margin-bottom: 3rem;
 }
-body main .intro-cont .inner .intro-wrap .layout:last-child {
+body main .container .intro-item:last-child {
   padding-left: 6.5rem;
 }
-body main .intro-cont .inner .intro-wrap .layout .text-wrap {
+body main .container .intro-item .text-wrap {
   padding: 0;
 }
-body main .intro-cont .inner .intro-wrap .layout .text-wrap .layout-title {
+body main .container .intro-item .text-wrap .layout-title {
+  color: #333;
   font-size: 2.8rem;
   font-weight: 400;
-  color: #333;
+  margin-bottom: 3rem;
 }
-body main .intro-cont .inner .intro-wrap .layout .text-wrap .layout-title-sub {
-  font-size: 1.8rem;
+body main .container .intro-item .text-wrap .layout-title-sub {
   color: #333;
+  font-size: 1.8rem;
   line-height: 2;
   -webkit-line-clamp: initial;
-  margin-top: 3rem;
+  margin: 0;
   word-break: keep-all;
 }
-body main .cunst-cont {
+body main .container {
   padding: 10rem 0;
   background-color: #f5f8ff;
 }
-body main .cunst-cont .inner .cunst-wrap .layout {
+body main .container-inner .conslt-item {
   background-color: transparent;
 }
-body main .cunst-cont .inner .cunst-wrap .layout .text-wrap {
+body main .container-inner .conslt-item .text-wrap {
   padding: 0;
 }
-body main .cunst-cont .inner .cunst-wrap .layout .text-wrap .layout-title {
+body main .container-inner .conslt-item .text-wrap .layout-title {
   font-size: 5rem;
   color: #333;
   line-height: 1.4;
 }
-body main .cunst-cont .inner .cunst-wrap .layout .text-wrap .layout-title-sub {
+body main .container-inner .conslt-item .text-wrap .layout-title-sub {
   font-size: 1.8rem;
   color: #666;
   line-height: 2;
@@ -561,6 +551,7 @@ body .bg-blue {
 body .h1 {
   margin-bottom: 10rem;
   font-family: "Sebang Gothic", sans-serif;
+  color: #333;
   font-size: 4.2rem;
   font-weight: 400;
   text-align: center;
@@ -628,57 +619,57 @@ body hgroup span {
 }
 
 @media (max-width: 1700px) {
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub1 {
+  body main .visual-img-wrap .deco-buble.bub1 {
     left: -8rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub2 {
+  body main .visual-img-wrap .deco-buble.bub2 {
     right: -8rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub3 {
+  body main .visual-img-wrap .deco-buble.bub3 {
     right: -10rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .img-wrap {
+  body main .visual-img-wrap .img-wrap {
     width: 70%;
     right: -10rem;
     bottom: -5rem;
   }
 }
 @media (max-width: 1520px) {
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub2 {
+  body main .visual-img-wrap .deco-buble.bub2 {
     width: 25rem;
     height: 25rem;
     right: -1rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub3 {
+  body main .visual-img-wrap .deco-buble.bub3 {
     right: -3rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .img-wrap {
+  body main .visual-img-wrap .img-wrap {
     width: 60%;
     right: -5rem;
     bottom: -1rem;
   }
 }
 @media (max-width: 1400px) {
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub1 {
+  body main .visual-img-wrap .deco-buble.bub1 {
     opacity: 0.5;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub2 {
+  body main .visual-img-wrap .deco-buble.bub2 {
     width: 25rem;
     height: 25rem;
     right: -3rem;
     opacity: 0.5;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub3 {
+  body main .visual-img-wrap .deco-buble.bub3 {
     right: -5rem;
     opacity: 0.5;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .img-wrap {
+  body main .visual-img-wrap .img-wrap {
     width: 90%;
     right: 50%;
     bottom: 30%;
     transform: translate(50%, 50%);
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .img-wrap img {
+  body main .visual-img-wrap .img-wrap img {
     opacity: 0.2;
   }
 }
@@ -694,12 +685,11 @@ body hgroup span {
   }
 }
 @media (max-width: 1199px) {
-  body main .intro-cont .inner .intro-wrap .layout:first-child {
-    padding-right: 0rem;
+  body main .container .intro-item:first-child {
+    padding-right: 0;
   }
-  body main .intro-cont .inner .intro-wrap .layout:last-child {
-    padding-left: 0rem;
-    margin-top: 6rem;
+  body main .container .intro-item:last-child {
+    padding-left: 0;
   }
 }
 @media (max-width: 1024px) {
@@ -712,22 +702,22 @@ body hgroup span {
   body .con-wrap__header3 .header3__pc-wrap .pc-wrap__right .mo-nav-btn .mo-nav-btn__line {
     background-color: #fff;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub1 {
+  body main .visual-img-wrap .deco-buble.bub1 {
     width: 20rem;
     height: 20rem;
     left: -3rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub2 {
+  body main .visual-img-wrap .deco-buble.bub2 {
     width: 20rem;
     height: 20rem;
     top: 2rem;
     right: 3rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub3 {
+  body main .visual-img-wrap .deco-buble.bub3 {
     top: 2rem;
     right: 0;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .img-wrap {
+  body main .visual-img-wrap .img-wrap {
     width: 100%;
   }
   body main .benefit-item {
@@ -754,23 +744,20 @@ body hgroup span {
   }
 }
 @media (max-width: 768px) {
-  body main .visual-cont .inner .visual-wrap .visual-box .visual-title {
+  body main .visual-title {
     font-size: 4rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-box .visual-text-box .visual-text {
+  body main .visual-text {
     font-size: 1.6rem;
     display: flex;
     flex-wrap: wrap;
   }
-  body main .intro-cont .inner .intro-title {
-    font-size: 2.4rem;
-  }
-  body main .intro-cont .inner .intro-wrap .layout .text-wrap .layout-title {
+  body main .container .intro-item .text-wrap .layout-title {
     font-size: 2rem;
     word-break: keep-all;
     line-height: 1.4;
   }
-  body main .intro-cont .inner .intro-wrap .layout .text-wrap .layout-title-sub {
+  body main .container .intro-item .text-wrap .layout-title-sub {
     font-size: 1.6rem;
   }
   body main .consult .tit-group {
@@ -828,33 +815,30 @@ body hgroup span {
   }
 }
 @media (max-width: 500px) {
-  body main .visual-cont {
+  body main .visual {
     padding: 18rem 0 16rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-box .visual-title {
+  body main .visual-title {
     font-size: 2.4rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-box .visual-text-box .visual-text {
+  body main .visual-text {
     font-size: 1.4rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub1 {
+  body main .visual-img-wrap .deco-buble.bub1 {
     top: -5rem;
     width: 14rem;
     height: 14rem;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub2 {
+  body main .visual-img-wrap .deco-buble.bub2 {
     width: 12rem;
     height: 12rem;
     top: 8rem;
     right: 0;
   }
-  body main .visual-cont .inner .visual-wrap .visual-img-wrap .deco-buble.bub3 {
+  body main .visual-img-wrap .deco-buble.bub3 {
     width: 5rem;
     height: 5rem;
     top: 8rem;
-  }
-  body main .intro-cont {
-    padding: 8rem 0;
   }
   body main .banner .h1 strong {
     display: block;

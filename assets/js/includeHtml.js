@@ -1,7 +1,7 @@
 const header = document.querySelector("header");
 
 header.innerHTML = `
-<div class="d-flex header3__pc-wrap inner">
+<div class="d-flex header3__pc-wrap container-inner">
     <h1 class="header-title">
         <a href="" class="font-30 sebang">miro</a>
     </h1>

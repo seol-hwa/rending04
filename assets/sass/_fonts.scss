@@ -20,12 +20,8 @@
 @include font-face("Noto Sans KR", "NotoSansKR-Bold", 700);
 @include font-face("Noto Sans KR", "NotoSansKR-Black", 900);
 
-// @include font-face('Sebang Gothic','NotoSansKR-Thin',100);
-// @include font-face('Sebang Gothic','NotoSansKR-Light',300);
 @include font-face("Sebang Gothic", "SEBANG_Gothic", 400);
-// @include font-face('Sebang Gothic','NotoSansKR-Medium',500);
 @include font-face("Sebang Gothic", "SEBANG_Gothic_Bold", 700);
-// @include font-face('Sebang Gothic','NotoSansKR-Black',900);
 
 //
 %bodyFont {
@@ -36,10 +32,6 @@
 body,
 html {
   @extend %bodyFont;
-  .sebang {
-    font-family: "Sebang Gothic", sans-serif;
-    line-height: 1.2;
-  }
 }
 
 @function rem($pixel, $context: 10) {

@@ -89,146 +89,134 @@ body {
 
   //main
   main {
-    .visual-cont {
+    //visual
+    .visual {
       background-image: linear-gradient(to left, #465fed, #657aef);
       padding: 23.6rem 0rem 21rem;
 
-      .inner {
-        .visual-wrap {
-          position: relative;
+      &-wrap {
+        position: relative;
+      }
+      &-box {
+        position: relative;
+        z-index: 1;
+      }
+      &-title {
+        font-size: 6rem;
+        color: #fff;
+        line-height: 1.2;
+      }
+      &-text-box {
+        margin-top: 4rem;
+      }
+      &-text {
+        color: #fff;
+        font-size: 2rem;
+        line-height: 1.6;
+      }
+      &-link {
+        color: #fff;
+        display: inline-block;
+        margin-top: 3rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        line-height: 1.6;
+        font-size: 2rem;
+      }
 
-          .visual-box {
-            position: relative;
-            z-index: 1;
+      &-img-wrap {
+        .deco-buble {
+          position: absolute;
+          border-radius: 50%;
+          display: block;
 
-            .visual-title {
-              font-size: 6rem;
-              color: #fff;
-              line-height: 1.2;
-            }
-
-            .visual-text-box {
-              margin-top: 4rem;
-
-              .visual-text {
-                color: #fff;
-                font-size: 2rem;
-                line-height: 1.6;
-              }
-            }
-
-            .visual-link {
-              color: #fff;
-              display: inline-block;
-              margin-top: 3rem;
-              border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-              line-height: 1.6;
-              font-size: 2rem;
-            }
+          &.bub1 {
+            width: 25.3rem;
+            height: 25.3rem;
+            background-image: linear-gradient(
+              135deg,
+              rgba(255, 255, 255, 0.5),
+              transparent 60%
+            );
+            top: -8.6rem;
+            left: -11.3rem;
           }
 
-          .visual-img-wrap {
-            .deco-buble {
-              position: absolute;
-              border-radius: 50%;
-              display: block;
+          &.bub2 {
+            width: 28.2rem;
+            height: 28.2rem;
+            background-image: linear-gradient(
+              -90deg,
+              rgba(255, 255, 255, 0.2),
+              transparent 70%
+            );
+            top: -2rem;
+            right: -16rem;
+          }
 
-              &.bub1 {
-                width: 25.3rem;
-                height: 25.3rem;
-                background-image: linear-gradient(
-                  135deg,
-                  rgba(255, 255, 255, 0.5),
-                  transparent 60%
-                );
-                top: -8.6rem;
-                left: -11.3rem;
-              }
+          &.bub3 {
+            width: 14rem;
+            height: 14rem;
+            background-image: linear-gradient(
+              -45deg,
+              rgba(255, 255, 255, 0.4),
+              transparent
+            );
+            top: -2rem;
+            right: -18rem;
+          }
+        }
 
-              &.bub2 {
-                width: 28.2rem;
-                height: 28.2rem;
-                background-image: linear-gradient(
-                  -90deg,
-                  rgba(255, 255, 255, 0.2),
-                  transparent 70%
-                );
-                top: -2rem;
-                right: -16rem;
-              }
+        .img-wrap {
+          position: absolute;
+          width: 80%;
+          bottom: -10.2rem;
+          right: -20rem;
 
-              &.bub3 {
-                width: 14rem;
-                height: 14rem;
-                background-image: linear-gradient(
-                  -45deg,
-                  rgba(255, 255, 255, 0.4),
-                  transparent
-                );
-                top: -2rem;
-                right: -18rem;
-              }
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    //intro
+    .container {
+      .intro {
+        &-item {
+          background-color: transparent;
+          &:first-child {
+            padding-right: 6.5rem;
+            margin-bottom: 3rem;
+          }
+          &:last-child {
+            padding-left: 6.5rem;
+          }
+          .text-wrap {
+            padding: 0;
+            .layout-title {
+              color: #333;
+              font-size: 2.8rem;
+              font-weight: 400;
+              margin-bottom: 3rem;
             }
-
-            .img-wrap {
-              position: absolute;
-              width: 80%;
-              bottom: -10.2rem;
-              right: -20rem;
-
-              img {
-                width: 100%;
-              }
+            .layout-title-sub {
+              color: #333;
+              font-size: 1.8rem;
+              line-height: 2;
+              -webkit-line-clamp: initial;
+              margin: 0;
+              word-break: keep-all;
             }
           }
         }
       }
     }
-    .intro-cont {
-      padding: 10.4rem 0 10rem 0;
-      .inner {
-        .intro-title {
-          text-align: center;
-          font-weight: 400;
-          font-size: 4.2rem;
-          color: #333;
-        }
-        .intro-wrap {
-          margin-top: 10rem;
-          .layout {
-            background-color: transparent;
-            &:first-child {
-              padding-right: 6.5rem;
-            }
-            &:last-child {
-              padding-left: 6.5rem;
-            }
-            .text-wrap {
-              padding: 0;
-              .layout-title {
-                font-size: 2.8rem;
-                font-weight: 400;
-                color: #333;
-              }
-              .layout-title-sub {
-                font-size: 1.8rem;
-                color: #333;
-                line-height: 2;
-                -webkit-line-clamp: initial;
-                margin-top: 3rem;
-                word-break: keep-all;
-              }
-            }
-          }
-        }
-      }
-    }
-    .cunst-cont {
+    //consulting
+    .container {
       padding: 10rem 0;
       background-color: #f5f8ff;
-      .inner {
-        .cunst-wrap {
-          .layout {
+      &-inner {
+        .conslt {
+          &-item {
             background-color: transparent;
             .text-wrap {
               padding: 0;
@@ -506,6 +494,7 @@ body {
   .h1 {
     margin-bottom: 10rem;
     font-family: "Sebang Gothic", sans-serif;
+    color: #333;
     font-size: 4.2rem;
     font-weight: 400;
     text-align: center;
@@ -580,30 +569,26 @@ body {
   body {
     //main
     main {
-      .visual-cont {
-        .inner {
-          .visual-wrap {
-            .visual-img-wrap {
-              .deco-buble {
-                &.bub1 {
-                  left: -8rem;
-                }
-
-                &.bub2 {
-                  right: -8rem;
-                }
-
-                &.bub3 {
-                  right: -10rem;
-                }
-              }
-
-              .img-wrap {
-                width: 70%;
-                right: -10rem;
-                bottom: -5rem;
-              }
+      .visual {
+        &-img-wrap {
+          .deco-buble {
+            &.bub1 {
+              left: -8rem;
             }
+
+            &.bub2 {
+              right: -8rem;
+            }
+
+            &.bub3 {
+              right: -10rem;
+            }
+          }
+
+          .img-wrap {
+            width: 70%;
+            right: -10rem;
+            bottom: -5rem;
           }
         }
       }
@@ -615,28 +600,24 @@ body {
   body {
     //main
     main {
-      .visual-cont {
-        .inner {
-          .visual-wrap {
-            .visual-img-wrap {
-              .deco-buble {
-                &.bub2 {
-                  width: 25rem;
-                  height: 25rem;
-                  right: -1rem;
-                }
-
-                &.bub3 {
-                  right: -3rem;
-                }
-              }
-
-              .img-wrap {
-                width: 60%;
-                right: -5rem;
-                bottom: -1rem;
-              }
+      .visual {
+        &-img-wrap {
+          .deco-buble {
+            &.bub2 {
+              width: 25rem;
+              height: 25rem;
+              right: -1rem;
             }
+
+            &.bub3 {
+              right: -3rem;
+            }
+          }
+
+          .img-wrap {
+            width: 60%;
+            right: -5rem;
+            bottom: -1rem;
           }
         }
       }
@@ -648,38 +629,34 @@ body {
   body {
     //main
     main {
-      .visual-cont {
-        .inner {
-          .visual-wrap {
-            .visual-img-wrap {
-              .deco-buble {
-                &.bub1 {
-                  opacity: 0.5;
-                }
+      .visual {
+        &-img-wrap {
+          .deco-buble {
+            &.bub1 {
+              opacity: 0.5;
+            }
 
-                &.bub2 {
-                  width: 25rem;
-                  height: 25rem;
-                  right: -3rem;
-                  opacity: 0.5;
-                }
+            &.bub2 {
+              width: 25rem;
+              height: 25rem;
+              right: -3rem;
+              opacity: 0.5;
+            }
 
-                &.bub3 {
-                  right: -5rem;
-                  opacity: 0.5;
-                }
-              }
+            &.bub3 {
+              right: -5rem;
+              opacity: 0.5;
+            }
+          }
 
-              .img-wrap {
-                width: 90%;
-                right: 50%;
-                bottom: 30%;
-                transform: translate(50%, 50%);
+          .img-wrap {
+            width: 90%;
+            right: 50%;
+            bottom: 30%;
+            transform: translate(50%, 50%);
 
-                img {
-                  opacity: 0.2;
-                }
-              }
+            img {
+              opacity: 0.2;
             }
           }
         }
@@ -710,17 +687,14 @@ body {
 @media (max-width: 1199px) {
   body {
     main {
-      .intro-cont {
-        .inner {
-          .intro-wrap {
-            .layout {
-              &:first-child {
-                padding-right: 0rem;
-              }
-              &:last-child {
-                padding-left: 0rem;
-                margin-top: 6rem;
-              }
+      .container {
+        .intro {
+          &-item {
+            &:first-child {
+              padding-right: 0;
+            }
+            &:last-child {
+              padding-left: 0;
             }
           }
         }
@@ -766,37 +740,31 @@ body {
 
     //main
     main {
-      .visual-cont {
-        // padding-right: 5rem;
-        // padding-left: 5rem;
-
-        .inner {
-          .visual-wrap {
-            .visual-img-wrap {
-              .deco-buble {
-                &.bub1 {
-                  width: 20rem;
-                  height: 20rem;
-                  left: -3rem;
-                }
-
-                &.bub2 {
-                  width: 20rem;
-                  height: 20rem;
-                  top: 2rem;
-                  right: 3rem;
-                }
-
-                &.bub3 {
-                  top: 2rem;
-                  right: 0;
-                }
-              }
-
-              .img-wrap {
-                width: 100%;
-              }
+      //visual
+      .visual {
+        &-img-wrap {
+          .deco-buble {
+            &.bub1 {
+              width: 20rem;
+              height: 20rem;
+              left: -3rem;
             }
+
+            &.bub2 {
+              width: 20rem;
+              height: 20rem;
+              top: 2rem;
+              right: 3rem;
+            }
+
+            &.bub3 {
+              top: 2rem;
+              right: 0;
+            }
+          }
+
+          .img-wrap {
+            width: 100%;
           }
         }
       }
@@ -840,41 +808,30 @@ body {
   body {
     //main
     main {
-      .visual-cont {
-        .inner {
-          .visual-wrap {
-            .visual-box {
-              .visual-title {
-                font-size: 4rem;
-              }
+      //visaul
+      .visual {
+        &-title {
+          font-size: 4rem;
+        }
 
-              .visual-text-box {
-                .visual-text {
-                  font-size: 1.6rem;
-                  display: flex;
-                  flex-wrap: wrap;
-                }
-              }
-            }
-          }
+        &-text {
+          font-size: 1.6rem;
+          display: flex;
+          flex-wrap: wrap;
         }
       }
-      .intro-cont {
-        .inner {
-          .intro-title {
-            font-size: 2.4rem;
-          }
-          .intro-wrap {
-            .layout {
-              .text-wrap {
-                .layout-title {
-                  font-size: 2rem;
-                  word-break: keep-all;
-                  line-height: 1.4;
-                }
-                .layout-title-sub {
-                  font-size: 1.6rem;
-                }
+      //intro
+      .container {
+        .intro {
+          &-item {
+            .text-wrap {
+              .layout-title {
+                font-size: 2rem;
+                word-break: keep-all;
+                line-height: 1.4;
+              }
+              .layout-title-sub {
+                font-size: 1.6rem;
               }
             }
           }
@@ -954,46 +911,36 @@ body {
   body {
     //main
     main {
-      .visual-cont {
+      //visual
+      .visual {
         padding: 18rem 0 16rem;
-        .inner {
-          .visual-wrap {
-            .visual-box {
-              .visual-title {
-                font-size: 2.4rem;
-              }
+        &-title {
+          font-size: 2.4rem;
+        }
 
-              .visual-text-box {
-                .visual-text {
-                  font-size: 1.4rem;
-                }
-              }
+        &-text {
+          font-size: 1.4rem;
+        }
+        &-img-wrap {
+          .deco-buble {
+            &.bub1 {
+              top: -5rem;
+              width: 14rem;
+              height: 14rem;
             }
-            .visual-img-wrap {
-              .deco-buble {
-                &.bub1 {
-                  top: -5rem;
-                  width: 14rem;
-                  height: 14rem;
-                }
-                &.bub2 {
-                  width: 12rem;
-                  height: 12rem;
-                  top: 8rem;
-                  right: 0;
-                }
-                &.bub3 {
-                  width: 5rem;
-                  height: 5rem;
-                  top: 8rem;
-                }
-              }
+            &.bub2 {
+              width: 12rem;
+              height: 12rem;
+              top: 8rem;
+              right: 0;
+            }
+            &.bub3 {
+              width: 5rem;
+              height: 5rem;
+              top: 8rem;
             }
           }
         }
-      }
-      .intro-cont {
-        padding: 8rem 0;
       }
       // 배너
       .banner {

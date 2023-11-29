@@ -101,12 +101,6 @@ html {
   line-height: 1.5;
 }
 
-body .sebang,
-html .sebang {
-  font-family: "Sebang Gothic", sans-serif;
-  line-height: 1.2;
-}
-
 .font-12-bl {
   font-size: 1.2rem;
   line-height: 1.3;
@@ -9450,6 +9444,11 @@ html .sebang {
 
 .font-b {
   font-weight: bold;
+}
+
+.sebang {
+  font-family: "Sebang Gothic", sans-serif;
+  line-height: 1.2;
 }
 
 /*# sourceMappingURL=guide.css.map */
