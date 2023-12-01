@@ -162,8 +162,12 @@ body {
 body .con-wrap__header3 {
   position: fixed;
   width: 100%;
+  background-color: transparent;
+  transition: background 0.3s;
   z-index: 99;
-  padding: 1rem 0;
+}
+body .con-wrap__header3.scroll {
+  background-color: #465fed;
 }
 body .con-wrap__header3 .header3__pc-wrap .header-title {
   color: #fff;
@@ -215,6 +219,7 @@ body .con-wrap__header3 .header3__pc-wrap .pc-wrap__right .mo-nav-btn.active .mo
 body main .visual {
   background-image: linear-gradient(to left, #465fed, #657aef);
   padding: 23.6rem 0rem 21rem;
+  opacity: 0;
 }
 body main .visual-wrap {
   position: relative;
@@ -222,6 +227,7 @@ body main .visual-wrap {
 body main .visual-box {
   position: relative;
   z-index: 1;
+  opacity: 0;
 }
 body main .visual-title {
   font-size: 6rem;
@@ -243,6 +249,9 @@ body main .visual-link {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   line-height: 1.6;
   font-size: 2rem;
+}
+body main .visual-img-wrap {
+  opacity: 0;
 }
 body main .visual-img-wrap .deco-buble {
   position: absolute;
@@ -413,19 +422,22 @@ body main .benefit {
   flex-wrap: wrap;
   gap: 1.2rem 1.2rem;
 }
+body main .benefit li {
+  border-radius: 1rem;
+  width: calc(33.33% - 0.8rem);
+}
+body main .benefit li:nth-of-type(odd) .benefit-item {
+  background: #e8ecf6;
+}
 body main .benefit-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(33.33% - 0.8rem);
+  height: 100%;
   padding: 5rem 0;
   background: #f5f8ff;
-  border-radius: 1rem;
   text-align: center;
-}
-body main .benefit-item:nth-of-type(odd) {
-  background: #e8ecf6;
 }
 body main .benefit-item .icon {
   display: block;
@@ -471,13 +483,37 @@ body main .brand-list {
   justify-content: center;
   gap: 3.5rem;
 }
-body main .brand-list .logo-icon {
-  display: block;
-  width: 15rem;
-  height: 15rem;
+body main .brand-list li {
+  width: calc((100% - 21rem) / 7);
+  padding-bottom: calc((100% - 21rem) / 7);
 }
-body main .brand-list .logo-icon img {
+body main .brand-list .brand-logo {
   width: 100%;
+  padding-bottom: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body main .brand-list .brand-logo.benz {
+  background-image: url(../images/brand_temp1.png);
+}
+body main .brand-list .brand-logo.bolbo {
+  background-image: url(../images/brand_temp2.png);
+}
+body main .brand-list .brand-logo.hyundai {
+  background-image: url(../images/brand_temp3.png);
+}
+body main .brand-list .brand-logo.audi {
+  background-image: url(../images/brand_temp4.png);
+}
+body main .brand-list .brand-logo.bmw {
+  background-image: url(../images/brand_temp5.png);
+}
+body main .brand-list .brand-logo.kia {
+  background-image: url(../images/brand_temp6.png);
+}
+body main .brand-list .brand-logo.samsung {
+  background-image: url(../images/brand_temp7.png);
 }
 body main .consult .tit-group {
   display: flex;
@@ -488,7 +524,7 @@ body main .consult .tit-group .h1 {
   margin-bottom: 0;
   text-align: left;
 }
-body main .consult .tit-group p {
+body main .consult .tit-group .sub_p {
   width: 50%;
   font-size: 1.8rem;
 }
@@ -499,37 +535,42 @@ body main .consult__process {
   gap: 2rem;
 }
 body main .consult__process li {
-  width: 193px;
-  height: 193px;
-  text-indent: -9999px;
+  width: calc((100% - 10rem) / 6);
+}
+body main .consult__process li .step {
+  width: 100%;
+  padding-bottom: 100%;
   overflow: hidden;
 }
-body main .consult__process li.step1 {
+body main .consult__process li .step1 {
   background: url(../images/consult1.png) no-repeat center;
   background-size: cover;
 }
-body main .consult__process li.step2 {
+body main .consult__process li .step2 {
   background: url(../images/consult2.png) no-repeat center;
   background-size: cover;
 }
-body main .consult__process li.step3 {
+body main .consult__process li .step3 {
   background: url(../images/consult3.png) no-repeat center;
   background-size: cover;
 }
-body main .consult__process li.step4 {
+body main .consult__process li .step4 {
   background: url(../images/consult4.png) no-repeat center;
   background-size: cover;
 }
-body main .consult__process li.step5 {
+body main .consult__process li .step5 {
   background: url(../images/consult5.png) no-repeat center;
   background-size: cover;
 }
-body main .consult__process li.step6 {
+body main .consult__process li .step6 {
   background: url(../images/consult6.png) no-repeat center;
   background-size: cover;
 }
 body main .banner {
   background: #5a70ee;
+}
+body main .banner .h1 {
+  color: #fff;
 }
 body main .banner__box {
   gap: 2rem;
@@ -554,7 +595,8 @@ body .container {
 }
 body .container-inner {
   position: relative;
-  width: 126rem;
+  width: 132.4rem;
+  padding: 0 3.2rem;
   margin: 0 auto;
 }
 body .bg-blue {
@@ -583,6 +625,14 @@ body hgroup span {
   color: #666;
   font-size: 1.8rem;
   text-align: center;
+}
+body ._gsap-box {
+  overflow: hidden;
+}
+body ._gsap-box__item {
+  display: block;
+  opacity: 0;
+  transform: translateY(100%);
 }
 
 .footer-inner {
@@ -685,15 +735,15 @@ body hgroup span {
     opacity: 0.2;
   }
 }
-@media (max-width: 1260px) {
+@media (max-width: 1324px) {
   body .container-inner {
-    width: 98%;
+    width: 100%;
   }
   body main .consult .tit-group .h1 {
     padding-left: 5%;
   }
   .footer-inner {
-    width: 98%;
+    width: 100%;
   }
 }
 @media (max-width: 1199px) {
@@ -781,13 +831,27 @@ body hgroup span {
   body main .container .duolg-item .text-wrap .layout-title-sub {
     font-size: 1.6rem;
   }
+  body main .brand-list .brand-logo {
+    width: calc((100% - 10.5rem) / 4);
+    padding-bottom: calc((100% - 10.5rem) / 4);
+  }
   body main .consult .tit-group {
     margin-bottom: 5rem;
+  }
+  body main .consult__process {
+    gap: 5rem;
+  }
+  body main .consult__process li {
+    width: calc((100% - 10rem) / 3);
+    padding-bottom: calc((100% - 10rem) / 3);
   }
   body main .banner__item {
     width: calc(30% - 1rem);
     padding: 1.5rem 0;
     font-size: 1.8rem;
+  }
+  body .container-inner {
+    padding: 0 2rem;
   }
   body .h1 {
     margin-bottom: 5rem;
@@ -826,14 +890,6 @@ body hgroup span {
   body main .benefit-item dd {
     font-size: 1.4rem;
   }
-  body main .consult__process {
-    gap: 1.2rem;
-  }
-  body main .consult__process li {
-    width: calc(33.33% - 0.8rem);
-    height: 15rem;
-    background-size: contain !important;
-  }
 }
 @media (max-width: 500px) {
   body main .visual {
@@ -867,6 +923,16 @@ body hgroup span {
   body main .bubble-ans {
     width: 28rem;
   }
+  body main .brand-con .h1 {
+    margin-bottom: 2rem;
+  }
+  body main .brand-list {
+    gap: 2rem;
+  }
+  body main .brand-list .brand-logo {
+    width: calc((100% - 6rem) / 4);
+    padding-bottom: calc((100% - 6rem) / 4);
+  }
   body main .banner .h1 strong {
     display: block;
   }
@@ -876,8 +942,12 @@ body hgroup span {
   body main .banner__item {
     width: calc(50% - 0.5rem);
   }
+  body main .consult__process {
+    gap: 2rem;
+  }
   body main .consult__process li {
-    height: 12rem;
+    width: calc((100% - 4rem) / 3);
+    padding-bottom: calc((100% - 4rem) / 3);
   }
   body .container {
     padding: 8rem 0;

@@ -8,8 +8,12 @@ body {
   .con-wrap__header3 {
     position: fixed;
     width: 100%;
+    background-color: transparent;
+    transition: background 0.3s;
     z-index: 99;
-    padding: 1rem 0;
+    &.scroll {
+      background-color: #465fed;
+    }
 
     .header3__pc-wrap {
       .header-title {
@@ -93,6 +97,7 @@ body {
     .visual {
       background-image: linear-gradient(to left, #465fed, #657aef);
       padding: 23.6rem 0rem 21rem;
+      opacity: 0;
 
       &-wrap {
         position: relative;
@@ -100,6 +105,7 @@ body {
       &-box {
         position: relative;
         z-index: 1;
+        opacity: 0;
       }
       &-title {
         font-size: 6rem;
@@ -124,6 +130,7 @@ body {
       }
 
       &-img-wrap {
+        opacity: 0;
         .deco-buble {
           position: absolute;
           border-radius: 50%;
@@ -333,21 +340,26 @@ body {
       display: flex;
       flex-wrap: wrap;
       gap: 1.2rem 1.2rem;
-
+      li {
+        border-radius: 1rem;
+        width: calc(33.33% - 0.8rem);
+        &:nth-of-type(odd) {
+          .benefit-item {
+            background: #e8ecf6;
+          }
+        }
+      }
       &-item {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: calc(33.33% - 0.8rem);
+        // width: calc(33.33% - 0.8rem);
+        height: 100%;
         padding: 5rem 0;
         background: #f5f8ff;
-        border-radius: 1rem;
+        // border-radius: 1rem;
         text-align: center;
-
-        &:nth-of-type(odd) {
-          background: #e8ecf6;
-        }
 
         .icon {
           display: block;
@@ -398,16 +410,47 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       gap: 3.5rem;
-
-      .logo-icon {
-        display: block;
-        width: 15rem;
-        height: 15rem;
-
-        img {
-          width: 100%;
+      li {
+        width: calc((100% - 21rem) / 7);
+        padding-bottom: calc((100% - 21rem) / 7);
+      }
+      .brand-logo {
+        width: 100%;
+        padding-bottom: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        &.benz {
+          background-image: url(../images/brand_temp1.png);
+        }
+        &.bolbo {
+          background-image: url(../images/brand_temp2.png);
+        }
+        &.hyundai {
+          background-image: url(../images/brand_temp3.png);
+        }
+        &.audi {
+          background-image: url(../images/brand_temp4.png);
+        }
+        &.bmw {
+          background-image: url(../images/brand_temp5.png);
+        }
+        &.kia {
+          background-image: url(../images/brand_temp6.png);
+        }
+        &.samsung {
+          background-image: url(../images/brand_temp7.png);
         }
       }
+      // .logo-icon {
+      //   display: block;
+      //   width: 15rem;
+      //   height: 15rem;
+
+      //   img {
+      //     width: 100%;
+      //   }
+      // }
     }
 
     // 상담
@@ -420,7 +463,7 @@ body {
           margin-bottom: 0;
           text-align: left;
         }
-        p {
+        .sub_p {
           width: 50%;
           font-size: 1.8rem;
         }
@@ -432,34 +475,39 @@ body {
         gap: 2rem;
 
         li {
-          width: 193px;
-          height: 193px;
-          text-indent: -9999px;
-          overflow: hidden;
+          // width: 193px;
+          // height: 193px;
+          width: calc((100% - 10rem) / 6);
+          // text-indent: -9999px;
+          .step {
+            width: 100%;
+            padding-bottom: 100%;
+            overflow: hidden;
 
-          &.step1 {
-            background: url(../images/consult1.png) no-repeat center;
-            background-size: cover;
-          }
-          &.step2 {
-            background: url(../images/consult2.png) no-repeat center;
-            background-size: cover;
-          }
-          &.step3 {
-            background: url(../images/consult3.png) no-repeat center;
-            background-size: cover;
-          }
-          &.step4 {
-            background: url(../images/consult4.png) no-repeat center;
-            background-size: cover;
-          }
-          &.step5 {
-            background: url(../images/consult5.png) no-repeat center;
-            background-size: cover;
-          }
-          &.step6 {
-            background: url(../images/consult6.png) no-repeat center;
-            background-size: cover;
+            &1 {
+              background: url(../images/consult1.png) no-repeat center;
+              background-size: cover;
+            }
+            &2 {
+              background: url(../images/consult2.png) no-repeat center;
+              background-size: cover;
+            }
+            &3 {
+              background: url(../images/consult3.png) no-repeat center;
+              background-size: cover;
+            }
+            &4 {
+              background: url(../images/consult4.png) no-repeat center;
+              background-size: cover;
+            }
+            &5 {
+              background: url(../images/consult5.png) no-repeat center;
+              background-size: cover;
+            }
+            &6 {
+              background: url(../images/consult6.png) no-repeat center;
+              background-size: cover;
+            }
           }
         }
       }
@@ -468,6 +516,9 @@ body {
     // 배너
     .banner {
       background: #5a70ee;
+      .h1 {
+        color: #fff;
+      }
 
       &__box {
         gap: 2rem;
@@ -497,7 +548,8 @@ body {
 
     &-inner {
       position: relative;
-      width: 126rem;
+      width: 132.4rem;
+      padding: 0 3.2rem;
       margin: 0 auto;
     }
   }
@@ -527,6 +579,14 @@ body {
       color: #666;
       font-size: 1.8rem;
       text-align: center;
+    }
+  }
+  ._gsap-box {
+    overflow: hidden;
+    &__item {
+      display: block;
+      opacity: 0;
+      transform: translateY(100%);
     }
   }
 }
@@ -582,6 +642,7 @@ body {
   body {
     //main
     main {
+      //visual
       .visual {
         &-img-wrap {
           .deco-buble {
@@ -613,6 +674,7 @@ body {
   body {
     //main
     main {
+      //visual
       .visual {
         &-img-wrap {
           .deco-buble {
@@ -642,6 +704,7 @@ body {
   body {
     //main
     main {
+      //visual
       .visual {
         &-img-wrap {
           .deco-buble {
@@ -677,10 +740,10 @@ body {
     }
   }
 }
-@media (max-width: 1260px) {
+@media (max-width: 1324px) {
   body {
     .container-inner {
-      width: 98%;
+      width: 100%;
     }
     main {
       // 상담
@@ -694,13 +757,14 @@ body {
     }
   }
   .footer-inner {
-    width: 98%;
+    width: 100%;
   }
 }
 @media (max-width: 1199px) {
   body {
     main {
       .container {
+        //intro
         .intro {
           &-item {
             &:first-child {
@@ -867,10 +931,25 @@ body {
           }
         }
       }
+
+      //brand
+      .brand-list {
+        .brand-logo {
+          width: calc((100% - 10.5rem) / 4);
+          padding-bottom: calc((100% - 10.5rem) / 4);
+        }
+      }
       // 상담
       .consult {
         .tit-group {
           margin-bottom: 5rem;
+        }
+        &__process {
+          gap: 5rem;
+          li {
+            width: calc((100% - 10rem) / 3);
+            padding-bottom: calc((100% - 10rem) / 3);
+          }
         }
       }
       // 배너
@@ -884,6 +963,11 @@ body {
     }
 
     // 공통사용
+    .container {
+      &-inner {
+        padding: 0 2rem;
+      }
+    }
     .h1 {
       margin-bottom: 5rem;
       font-size: 2.4rem;
@@ -911,6 +995,7 @@ body {
 }
 @media (max-width: 640px) {
   body main {
+    //혜택
     .benefit {
       &-item {
         width: 100%;
@@ -927,14 +1012,15 @@ body {
         }
       }
     }
-    .consult__process {
-      gap: 1.2rem;
-      li {
-        width: calc(33.33% - 0.8rem);
-        height: 15rem;
-        background-size: contain !important;
-      }
-    }
+    //상담
+    // .consult__process {
+    //   gap: 1.2rem;
+    //   li {
+    //     width: calc(33.33% - 0.8rem);
+    //     height: 15rem;
+    //     background-size: contain !important;
+    //   }
+    // }
   }
 }
 @media (max-width: 500px) {
@@ -981,6 +1067,19 @@ body {
           width: 28rem;
         }
       }
+      // brand
+      .brand-con {
+        .h1 {
+          margin-bottom: 2rem;
+        }
+      }
+      .brand-list {
+        gap: 2rem;
+        .brand-logo {
+          width: calc((100% - 6rem) / 4);
+          padding-bottom: calc((100% - 6rem) / 4);
+        }
+      }
       // 배너
       .banner {
         .h1 strong {
@@ -994,8 +1093,11 @@ body {
         }
       }
       .consult__process {
+        gap: 2rem;
         li {
-          height: 12rem;
+          // height: 12rem;
+          width: calc((100% - 4rem) / 3);
+          padding-bottom: calc((100% - 4rem) / 3);
         }
       }
     }

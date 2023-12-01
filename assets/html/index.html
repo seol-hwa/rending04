@@ -15,7 +15,89 @@
 
   <body>
     <div id="wrap">
-      <header class="con-wrap__header3"></header>
+      <!-- header -->
+      <header class="con-wrap__header3">
+        <div class="d-flex header3__pc-wrap container-inner">
+          <!-- 로고 -->
+          <h1 class="header-title">
+            <a href="" class="font-30 sebang">miro</a>
+          </h1>
+          <!-- // 로고 -->
+          <!-- 네비 -->
+          <nav class="nav-style-3">
+            <ul class="main-list">
+              <li>
+                <a href="" class="main-list__menu"> 서비스소개 </a>
+              </li>
+              <li>
+                <a href="" class="main-list__menu"> 베스트상품 </a>
+              </li>
+              <li>
+                <a href="" class="main-list__menu"> 상담설계 </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- // 네비 -->
+          <div class="pc-wrap__right" role="group">
+            <p class="quick-qna">빠른상담 1588-4477</p>
+            <a href="" class="qna-link">
+              <strong>상담신청 하기</strong>
+            </a>
+            <button
+              type="button"
+              class="mo-nav-btn"
+              aria-controls="nav3-btn01"
+              id="nav3-btn01_1"
+              aria-expanded="false"
+            >
+              <span class="blind">전체메뉴</span>
+              <span class="mo-nav-btn__line"></span>
+              <span class="mo-nav-btn__line"></span>
+              <span class="mo-nav-btn__line"></span>
+            </button>
+          </div>
+        </div>
+        <div
+          class="mo-nav-wrap-3"
+          id="nav3-btn01"
+          aria-labelledby="nav3-btn01_1"
+          aria-hidden="true"
+        >
+          <div class="mo-nav-wrap__mo-nav-box">
+            <ul class="mo-main-list">
+              <li>
+                <a href="" class="mo-main-list__menu">
+                  서비스소개
+                  <span><i class="xi-arrow-right"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="mo-main-list__menu">
+                  베스트상품
+                  <span><i class="xi-arrow-right"></i></span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="mo-main-list__menu">
+                  상담설계
+                  <span><i class="xi-arrow-right"></i></span>
+                </a>
+              </li>
+            </ul>
+            <div class="mo-nav-wrap__footer" role="group">
+              <a href="" class="sns">
+                <i class="xi-kakaotalk xi-3x"></i>
+                <span class="blind">카카오톡</span>
+              </a>
+              <a href="" class="sns">
+                <i class="xi-instagram xi-3x"></i>
+                <span class="blind">인스타그램</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- // header -->
       <main role="main" id="contentArea">
         <!-- visual -->
         <section class="visual">
@@ -60,12 +142,16 @@
         </section>
         <!-- // visual -->
         <!-- intro -->
-        <section class="container">
+        <section class="container intro-con">
           <div class="container-inner">
-            <h2 class="h1"><span class="font-b">미로렌트&nbsp;</span>소개</h2>
+            <h2 class="h1 _gsap-box">
+              <span class="_intro-item">
+                <span class="font-b">미로렌트&nbsp;</span>소개
+              </span>
+            </h2>
             <div class="layout-style-2 row intro" role="group">
-              <div class="layout col-12 col-xl-6 intro-item">
-                <div class="text-wrap">
+              <div class="layout col-12 col-xl-6 intro-item _gsap-box">
+                <div class="text-wrap _intro-item _gsap-box__item">
                   <h3 class="layout-title sebang">
                     <span class="font-b">장기렌트카</span>란?
                   </h3>
@@ -78,8 +164,8 @@
                   </p>
                 </div>
               </div>
-              <div class="layout col-12 col-xl-6 intro-item">
-                <div class="text-wrap">
+              <div class="layout col-12 col-xl-6 intro-item _gsap-box">
+                <div class="text-wrap _intro-item _gsap-box__item">
                   <h3 class="layout-title sebang">
                     <span class="font-b">미로렌트</span>는 어떤 업체인가요?
                   </h3>
@@ -96,12 +182,12 @@
         </section>
         <!-- // intro -->
         <!-- duologue -->
-        <section class="container bg-blue">
+        <section class="container bg-blue duologue-con">
           <div class="container-inner">
             <div class="layout-style-2 row duolg" role="group">
               <!-- layout-item -->
-              <div class="layout col-12 col-lg-6 col-xl-5 duolg-item">
-                <div class="text-wrap">
+              <div class="layout col-12 col-lg-6 col-xl-5 duolg-item _gsap-box">
+                <div class="text-wrap _gsap-box__item _duolg-item">
                   <!-- head title -->
                   <h4 class="layout-title sebang">
                     언제 어디서든,<br />
@@ -119,18 +205,30 @@
                 class="layout col-12 col-lg-6 col-xl-7 duolg-item bubble d-flex"
               >
                 <!-- 고객 -->
-                <div class="bubble-qst">
-                  <img src="../images/question1.png" alt="" />
+                <div class="bubble-qst _gsap-box">
+                  <img
+                    src="../images/question1.png"
+                    alt=""
+                    class="_gsap-box__item _duolg-item"
+                  />
                 </div>
                 <!-- // 고객 -->
                 <!-- 기업 -->
-                <div class="bubble-ans">
-                  <img src="../images/answer.png" alt="" />
+                <div class="bubble-ans _gsap-box">
+                  <img
+                    src="../images/answer.png"
+                    alt=""
+                    class="_gsap-box__item _duolg-item"
+                  />
                 </div>
                 <!-- // 기업 -->
                 <!-- 고객 -->
-                <div class="bubble-qst">
-                  <img src="../images/question2.png" alt="" />
+                <div class="bubble-qst _gsap-box">
+                  <img
+                    src="../images/question2.png"
+                    alt=""
+                    class="_gsap-box__item _duolg-item"
+                  />
                 </div>
                 <!-- // 고객 -->
               </div>
@@ -139,7 +237,7 @@
         </section>
         <!-- // duologue -->
         <!-- best -->
-        <section class="container">
+        <section class="container best-con">
           <div class="container-inner">
             <h2 class="h1"><strong>미로렌트</strong> BEST</h2>
             <!-- 스와이퍼영역 -->
@@ -259,61 +357,75 @@
         <!-- // best -->
 
         <!-- 혜택 -->
-        <section class="container">
+        <section class="container benefit-con">
           <div class="container-inner">
-            <hgroup>
-              <h2 class="h1"><strong>미로렌트</strong> 혜택</h2>
-              <span>신차 장기렌터카가 더 합리적인 이유!</span>
+            <hgroup class="_gsap-box">
+              <div class="_gsap-box__item _bnf-item">
+                <h2 class="h1"><strong>미로렌트</strong> 혜택</h2>
+                <span>신차 장기렌터카가 더 합리적인 이유!</span>
+              </div>
             </hgroup>
             <ul class="benefit">
-              <li class="benefit-item">
-                <span class="icon _benefit1"></span>
-                <dl>
-                  <dt>다이렉트 서비스</dt>
-                  <dd>
-                    자동차 메이커가 직접 운영 <br />위약금 없는 신차 조기 대차
-                  </dd>
-                </dl>
+              <li class="_gsap-box">
+                <div class="benefit-item _gsap-box__item _bnf-item">
+                  <span class="icon _benefit1"></span>
+                  <dl>
+                    <dt>다이렉트 서비스</dt>
+                    <dd>
+                      자동차 메이커가 직접 운영 <br />위약금 없는 신차 조기 대차
+                    </dd>
+                  </dl>
+                </div>
               </li>
-              <li class="benefit-item">
-                <span class="icon _benefit2"></span>
-                <dl>
-                  <dt>차별화 서비스</dt>
-                  <dd>
-                    전국 780여개 정비망 구축 <br />연 4회 찾아가는 순회점검
-                    서비스
-                  </dd>
-                </dl>
+              <li class="_gsap-box">
+                <div class="benefit-item _gsap-box__item _bnf-item">
+                  <span class="icon _benefit2"></span>
+                  <dl>
+                    <dt>차별화 서비스</dt>
+                    <dd>
+                      전국 780여개 정비망 구축 <br />연 4회 찾아가는 순회점검
+                      서비스
+                    </dd>
+                  </dl>
+                </div>
               </li>
-              <li class="benefit-item">
-                <span class="icon _benefit3"></span>
-                <dl>
-                  <dt>맞춤형 마일리지</dt>
-                  <dd>주행거리 무제한 or 2만km 이하 마일리지</dd>
-                </dl>
+              <li class="_gsap-box">
+                <div class="benefit-item _gsap-box__item _bnf-item">
+                  <span class="icon _benefit3"></span>
+                  <dl>
+                    <dt>맞춤형 마일리지</dt>
+                    <dd>주행거리 무제한 or 2만km 이하 마일리지</dd>
+                  </dl>
+                </div>
               </li>
-              <li class="benefit-item">
-                <span class="icon _benefit4"></span>
-                <dl>
-                  <dt>초기비용 ZERO</dt>
-                  <dd>인도금&amp;취등록세 無 <br />자동차 보험료 無</dd>
-                </dl>
+              <li class="_gsap-box">
+                <div class="benefit-item _gsap-box__item _bnf-item">
+                  <span class="icon _benefit4"></span>
+                  <dl>
+                    <dt>초기비용 ZERO</dt>
+                    <dd>인도금&amp;취등록세 無 <br />자동차 보험료 無</dd>
+                  </dl>
+                </div>
               </li>
-              <li class="benefit-item">
-                <span class="icon _benefit5"></span>
-                <dl>
-                  <dt>보험료 ZERO</dt>
-                  <dd>사고시 보험 할증 無 <br />건강 보험료 상승 無</dd>
-                </dl>
+              <li class="_gsap-box">
+                <div class="benefit-item _gsap-box__item _bnf-item">
+                  <span class="icon _benefit5"></span>
+                  <dl>
+                    <dt>보험료 ZERO</dt>
+                    <dd>사고시 보험 할증 無 <br />건강 보험료 상승 無</dd>
+                  </dl>
+                </div>
               </li>
-              <li class="benefit-item">
-                <span class="icon _benefit6"></span>
-                <dl>
-                  <dt>세금 DOWN</dt>
-                  <dd>
-                    자동차세&amp;재산세 부과 제외 월 대여료 손비 처리 가능
-                  </dd>
-                </dl>
+              <li class="_gsap-box">
+                <div class="benefit-item _gsap-box__item _bnf-item">
+                  <span class="icon _benefit6"></span>
+                  <dl>
+                    <dt>세금 DOWN</dt>
+                    <dd>
+                      자동차세&amp;재산세 부과 제외 월 대여료 손비 처리 가능
+                    </dd>
+                  </dl>
+                </div>
               </li>
             </ul>
           </div>
@@ -321,51 +433,69 @@
         <!-- // 혜택 -->
 
         <!-- 브랜드 -->
-        <section class="container bg-blue">
+        <section class="container bg-blue brand-con">
           <div class="container-inner">
-            <h2 class="h1"><strong>미로렌트</strong> 브랜드</h2>
+            <div class="_gsap-box">
+              <h2 class="h1 _gsap-box__item _brand-item">
+                <strong>미로렌트</strong> 브랜드
+              </h2>
+            </div>
             <ul class="brand-list">
-              <li>
-                <span class="logo-icon">
+              <li class="_gsap-box">
+                <div class="_gsap-box__item brand-logo _brand-item benz">
+                  <!-- <span class="logo-icon">
                   <img src="../images/brand_temp1.png" alt="" />
-                </span>
-                <span class="blind">벤츠</span>
+                </span> -->
+                  <span class="blind">벤츠</span>
+                </div>
               </li>
-              <li>
-                <span class="logo-icon">
+              <li class="_gsap-box">
+                <div class="_gsap-box__item brand-logo _brand-item bolbo">
+                  <!-- <span class="logo-icon">
                   <img src="../images/brand_temp2.png" alt="" />
-                </span>
-                <span class="blind">볼보</span>
+                </span> -->
+                  <span class="blind">볼보</span>
+                </div>
               </li>
-              <li>
-                <span class="logo-icon">
+              <li class="_gsap-box">
+                <div class="_gsap-box__item brand-logo _brand-item hyundai">
+                  <!-- <span class="logo-icon">
                   <img src="../images/brand_temp3.png" alt="" />
-                </span>
-                <span class="blind">현대</span>
+                </span> -->
+                  <span class="blind">현대</span>
+                </div>
               </li>
-              <li>
-                <span class="logo-icon">
+              <li class="_gsap-box">
+                <div class="_gsap-box__item brand-logo _brand-item audi">
+                  <!-- <span class="logo-icon">
                   <img src="../images/brand_temp4.png" alt="" />
-                </span>
-                <span class="blind">아우디</span>
+                </span> -->
+                  <span class="blind">아우디</span>
+                </div>
               </li>
-              <li>
-                <span class="logo-icon">
+              <li class="_gsap-box">
+                <div class="_gsap-box__item brand-logo _brand-item bmw">
+                  <!-- <span class="logo-icon">
                   <img src="../images/brand_temp5.png" alt="" />
-                </span>
-                <span class="blind">bmw</span>
+                </span> -->
+                  <span class="blind">bmw</span>
+                </div>
               </li>
-              <li>
-                <span class="logo-icon">
+              <li class="_gsap-box">
+                <div class="_gsap-box__item brand-logo _brand-item kia">
+                  <!-- <span class="logo-icon">
                   <img src="../images/brand_temp6.png" alt="" />
-                </span>
-                <span class="blind">기아</span>
+                </span> -->
+                  <span class="blind">기아</span>
+                </div>
               </li>
-              <li>
-                <span class="logo-icon">
+              <li class="_gsap-box">
+                <div class="_gsap-box__item brand-logo _brand-item samsung">
+                  <!-- <span class="logo-icon">
                   <img src="../images/brand_temp7.png" alt="" />
-                </span>
-                <span class="blind">르노삼성</span>
+                </span> -->
+                  <span class="blind">르노삼성</span>
+                </div>
               </li>
             </ul>
           </div>
@@ -373,25 +503,53 @@
         <!-- // 브랜드 -->
 
         <!-- 상담 -->
-        <section class="container consult">
+        <section class="container consult consult-con">
           <div class="container-inner">
             <div class="tit-group">
-              <h2 class="h1">
-                <strong>언제 어디서든, <br />1:1 상담 가능합니다.</strong>
+              <h2 class="h1 _gsap-box">
+                <strong class="_gsap-box__item _consult-item"
+                  >언제 어디서든, <br />1:1 상담 가능합니다.</strong
+                >
               </h2>
-              <p>
-                새차를 갖는 가장 합리적인 방법 <br />차종, 브랜드, 유종에
-                상관없는 자유로운 선택! <br />갖고 싶던 내 차의 견적을
-                확인해보세요!
-              </p>
+              <div class="_gsap-box sub_p">
+                <p class="_gsap-box__item _consult-item">
+                  새차를 갖는 가장 합리적인 방법 <br />차종, 브랜드, 유종에
+                  상관없는 자유로운 선택! <br />갖고 싶던 내 차의 견적을
+                  확인해보세요!
+                </p>
+              </div>
             </div>
             <ol class="consult__process">
-              <li class="step1">견적신청</li>
-              <li class="step2">고객상담</li>
-              <li class="step3">렌탈사 선정</li>
-              <li class="step4">심사 및 계약</li>
-              <li class="step5">출고 및 인도</li>
-              <li class="step6">고객관리</li>
+              <li class="_gsap-box">
+                <div class="step1 step _gsap-box__item _consult-item">
+                  <span class="blind">견적신청</span>
+                </div>
+              </li>
+              <li class="_gsap-box">
+                <div class="step2 step _gsap-box__item _consult-item">
+                  <span class="blind">고객상담</span>
+                </div>
+              </li>
+              <li class="_gsap-box">
+                <div class="step3 step _gsap-box__item _consult-item">
+                  <span class="blind">렌탈사 선정</span>
+                </div>
+              </li>
+              <li class="_gsap-box">
+                <div class="step4 step _gsap-box__item _consult-item">
+                  <span class="blind">심사 및 계약</span>
+                </div>
+              </li>
+              <li class="_gsap-box">
+                <div class="step5 step _gsap-box__item _consult-item">
+                  <span class="blind">출고 및 인도</span>
+                </div>
+              </li>
+              <li class="_gsap-box">
+                <div class="step6 step _gsap-box__item _consult-item">
+                  <span class="blind">고객관리</span>
+                </div>
+              </li>
             </ol>
           </div>
         </section>
@@ -432,8 +590,13 @@
       </footer>
     </div>
     <script src="../js/swiper.js"></script>
-    <script src="../js/includeHtml.js"></script>
+    <!-- <script src="../js/includeHtml.js"></script> -->
+    <!--gsap cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="../js/nav_3.js"></script>
+    <script src="../js/main.js"></script>
+    <script></script>
     <script>
       const swiper = new Swiper(".best-swiper", {
         slidesPerView: 1,
