@@ -19,6 +19,12 @@ const $brandItem = document.querySelectorAll("._brand-item");
 //consult
 const $consultCont = document.querySelector(".consult-con");
 const $concultItem = document.querySelectorAll("._consult-item");
+//banner
+const $bannerCont = document.querySelector(".banner");
+const $bannerItem = document.querySelectorAll("._banner-item");
+//best
+const $bestCont = document.querySelector(".best-con");
+const $bestItem = document.querySelectorAll("._best-item");
 
 visualGsap();
 //visual gsap
@@ -53,28 +59,43 @@ window.addEventListener("scroll", () => {
 
 //스크롤 트리거 불러오기(플러그인 안정화)
 gsap.registerPlugin(ScrollTrigger);
-//gsap scroll trigger section별 기준점 배열
-// const $gsapPoint = gsap.utils.toArray("._gsap");
+
 fadeUp($introItem, $introCont);
 fadeUp($duoItem, $duoCont);
 fadeUp($bnfItem, $bnfCont);
 fadeUp($brandItem, $brandCont);
 fadeUp($concultItem, $consultCont);
+fadeUp($bannerItem, $bannerCont);
+fadeIn($bestItem, $bestCont);
 
+// gsap fadeUp action
 function fadeUp(item, triggerPoint) {
   for (let i = 0; i < item.length; i++) {
     gsap.to(item[i], {
       scrollTrigger: {
         trigger: triggerPoint,
-        start: "top center",
-        markers: true,
+        start: "top 80%",
+        // markers: true,
       },
       y: 0,
       opacity: 1,
       duration: 0.4,
-      delay: 0.3 * i,
+      delay: 0.2 * i,
     });
   }
 }
-
-// });
+// gsap fadeIn action
+function fadeIn(item, triggerPoint) {
+  for (let i = 0; i < item.length; i++) {
+    gsap.to(item[i], {
+      scrollTrigger: {
+        trigger: triggerPoint,
+        start: "top 80%",
+        // markers: true,
+      },
+      opacity: 1,
+      duration: 1,
+      delay: 0.4 * i,
+    });
+  }
+}

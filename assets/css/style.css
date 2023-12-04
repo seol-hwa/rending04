@@ -183,16 +183,6 @@ body .con-wrap__header3 .header3__pc-wrap .nav-style-3 .main-list > li .main-lis
   color: #fff;
   font-weight: bold;
 }
-body .con-wrap__header3 .header3__pc-wrap .nav-style-3 .main-list > li .sub-list li .sub-list__menu {
-  color: #fff;
-}
-body .con-wrap__header3 .header3__pc-wrap .nav-style-3 .main-list > li .sub-list li .sub-list__menu:hover, body .con-wrap__header3 .header3__pc-wrap .nav-style-3 .main-list > li .sub-list li .sub-list__menu:focus {
-  color: #fff;
-  font-weight: bold;
-}
-body .con-wrap__header3 .header3__pc-wrap .nav-style-3 .gnb-bg {
-  background-color: rgba(0, 0, 0, 0.1);
-}
 body .con-wrap__header3 .header3__pc-wrap .pc-wrap__right {
   align-items: center;
   gap: 2.2rem;
@@ -485,7 +475,6 @@ body main .brand-list {
 }
 body main .brand-list li {
   width: calc((100% - 21rem) / 7);
-  padding-bottom: calc((100% - 21rem) / 7);
 }
 body main .brand-list .brand-logo {
   width: 100%;
@@ -630,9 +619,11 @@ body ._gsap-box {
   overflow: hidden;
 }
 body ._gsap-box__item {
-  display: block;
   opacity: 0;
   transform: translateY(100%);
+}
+body ._gsap-box__op-item {
+  opacity: 0;
 }
 
 .footer-inner {
@@ -785,8 +776,8 @@ body ._gsap-box__item {
   body main .duolg {
     display: flex;
   }
-  body main .benefit-item {
-    width: calc(50% - 0.6rem);
+  body main .benefit li {
+    width: calc((100% - 1.2rem) / 2);
   }
   body main .consult .tit-group {
     display: block;
@@ -798,7 +789,7 @@ body ._gsap-box__item {
     padding-left: 0;
     text-align: center;
   }
-  body main .consult .tit-group p {
+  body main .consult .tit-group .sub_p {
     width: 100%;
   }
   .footer-left address ul {
@@ -831,9 +822,8 @@ body ._gsap-box__item {
   body main .container .duolg-item .text-wrap .layout-title-sub {
     font-size: 1.6rem;
   }
-  body main .brand-list .brand-logo {
+  body main .brand-list li {
     width: calc((100% - 10.5rem) / 4);
-    padding-bottom: calc((100% - 10.5rem) / 4);
   }
   body main .consult .tit-group {
     margin-bottom: 5rem;
@@ -843,7 +833,6 @@ body ._gsap-box__item {
   }
   body main .consult__process li {
     width: calc((100% - 10rem) / 3);
-    padding-bottom: calc((100% - 10rem) / 3);
   }
   body main .banner__item {
     width: calc(30% - 1rem);
@@ -876,8 +865,10 @@ body ._gsap-box__item {
   }
 }
 @media (max-width: 640px) {
-  body main .benefit-item {
+  body main .benefit li {
     width: 100%;
+  }
+  body main .benefit-item {
     padding: 3rem;
   }
   body main .benefit-item .icon {
@@ -929,9 +920,8 @@ body ._gsap-box__item {
   body main .brand-list {
     gap: 2rem;
   }
-  body main .brand-list .brand-logo {
+  body main .brand-list li {
     width: calc((100% - 6rem) / 4);
-    padding-bottom: calc((100% - 6rem) / 4);
   }
   body main .banner .h1 strong {
     display: block;
@@ -947,7 +937,6 @@ body ._gsap-box__item {
   }
   body main .consult__process li {
     width: calc((100% - 4rem) / 3);
-    padding-bottom: calc((100% - 4rem) / 3);
   }
   body .container {
     padding: 8rem 0;
