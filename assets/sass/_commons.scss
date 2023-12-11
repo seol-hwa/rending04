@@ -27,3 +27,21 @@
   font-family: "Sebang Gothic", sans-serif;
   line-height: 1.2;
 }
+.skip-menu {
+  li {
+    a {
+      display: block;
+      position: absolute;
+      z-index: 999;
+      transform: translateY(-100%);
+      background-color: #000;
+      color: #fff;
+      font-size: 20px;
+      border-radius: 30px;
+      padding: 10px 30px;
+      &:focus {
+        transform: translateY(0);
+      }
+    }
+  }
+}
